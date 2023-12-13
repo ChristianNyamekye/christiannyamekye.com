@@ -1,6 +1,38 @@
+/* Define the animations */
+@keyframes fadeInUp {
+  from {
+    transform: translate3d(0, 40px, 0);
+    opacity: 0;
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Apply the animations to your elements */
+.cards,
+.cards__container,
+.cards__wrapper{
+  animation-name: fadeInUp;
+  animation-duration: 3s;
+  animation-fill-mode: both;
+  animation-timing-function: ease-out;
+}
+
+
 .cards {
   padding: 4rem;
-  background:#66fcf1 ;
+  background:#0a192f ;
   border-radius: 10px;
 }
 /* #66fcf1#8ff3b2 */
@@ -38,9 +70,9 @@ h1 {
   display: flex;
   flex-flow: column;
   width: 80%;
-  box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17);
-  -webkit-filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
-  filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+  box-shadow: 0 0 5px #0ef, 0 0 10px #0ef;
+  -webkit-filter: drop-shadow(0 6px 20px rgba(74, 229, 243, 0.017));
+  filter: drop-shadow(0 6px 20px rgba(61, 211, 245, 0.017));
   border-radius: 10px;
   overflow: hidden;
   text-decoration: none;
@@ -97,7 +129,7 @@ h1 {
 }
 
 .cards__item__text {
-  color: #252e48;
+  color: #64ffda;
   font-size: 18px;
   line-height: 24px;
 }
@@ -118,4 +150,31 @@ h1 {
   .cards__item {
     margin-bottom: 2rem;
   }
+}
+
+/* Back to Top Button */
+.top {
+    position: fixed;
+    bottom: 2.1rem;
+    right: 2.1rem;
+    cursor: pointer;
+    background: linear-gradient(45deg, #00c6ff, #0c3273);
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 0 20px #00c6ff;
+    transition: background-color 1s, box-shadow 1s, transform 1s;
+}
+
+.top i {
+    display: block;
+    color: #fff;
+    font-size: 24px;
+    padding: 10px;
+}
+
+/* Hover Effect */
+.top:hover {
+    background: linear-gradient(45deg, #0c3273, #00c6ff);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 0 25px #00c6ff, 0 0 35px #0c3273;
+    transform: translateY(-5px);
 }
