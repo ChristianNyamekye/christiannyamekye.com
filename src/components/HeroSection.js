@@ -3,6 +3,8 @@ import "./HeroSection.css";
 import { Button } from "./button";
 import "../App.css";
 import Typed from "typed.js";
+import { Link } from "react-router-dom";
+
 
 import colorstack from "./images/cstack.jpeg";
 import nslf from "./images/nslf.png";
@@ -71,12 +73,22 @@ function HeroSection() {
           className="btns"
           buttonStyle="btn--outline"
           buttonSize="btn--large"
-          target="/projects"
+          target="/resume"
         >
           RESUMÉ <i className="far fa" />
-        </Button> */}
+        </Button>  */}
 
-        <button
+        <Link to="/resume" className="btn-mobile">
+          <button
+            className="btns btn--primary btn--large"
+            style={{ cursor: "pointer" }}
+            hover = "transparent"
+          >
+            RESUMÉ <i className="far fa" />
+          </button>
+        </Link>
+
+        {/* <button
           className="btns btn--primary btn--large"
           onClick={() => (window.location.href = "/resume")}
           // onClick={() =>
@@ -88,7 +100,7 @@ function HeroSection() {
           style={{ cursor: "pointer" }}
         >
           RESUMÉ <i className="far fa" />
-        </button>
+        </button> */}
       </div>
 
       <div className="typed-text">

@@ -1,5 +1,9 @@
 import React from "react";
 import "./Resume.css";
+// import { Button } from "../button";
+import { Link } from "react-router-dom";
+
+
 
 import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
 
@@ -219,18 +223,31 @@ export default function Resume() {
           </a>
         </div>
 
-        <section className="get-in-touch">
-          <a
+        <section className="div-block-17">
+          <Link to="/contactme" className="btn-mobile">
+            <button
+              className=" btn--large"
+              style={{
+                fontFamily: "'Pirata One', sans-serif",
+                fontSize: "50px",
+                color: "var(--accent-color)",
+              }}
+            >
+              Get In Touch <i className="far fa" />
+            </button>
+          </Link>
+
+          {/* <Button
+            // buttonStyle="btn--outline"
+            target="/contactme"
             style={{
               fontFamily: "'Pirata One', sans-serif",
               fontSize: "50px",
               color: "var(--accent-color)",
             }}
-            href="/contactme"
-            // target="/contactme"
           >
-            <h2>Get in Touch</h2>
-          </a>
+            Get In Touch
+          </Button> */}
 
           <br></br>
           <br></br>
