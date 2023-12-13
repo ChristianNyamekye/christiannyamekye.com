@@ -1,9 +1,7 @@
-
-
 import React, { useEffect, useRef } from "react";
-import './HeroSection.css';
-import { Button } from './button';
-import '../App.css';
+import "./HeroSection.css";
+import { Button } from "./button";
+import "../App.css";
 import Typed from "typed.js";
 
 import colorstack from "./images/cstack.jpeg";
@@ -12,8 +10,6 @@ import nsbe from "./images/nsbe.jpeg";
 import yaf from "./images/yaf.png";
 import codepath from "./images/cpath.jpeg";
 import qiskit from "./images/qiskit.png"; // Update with the correct path
-
-
 
 function HeroSection() {
   document.addEventListener("scroll", function () {
@@ -33,7 +29,13 @@ function HeroSection() {
 
   useEffect(() => {
     const typed = new Typed(el.current, {
-      strings: ["hey!", "you", "welcome to my humble abode.", "enjoy your stay", ":)"],
+      strings: [
+        "hey!",
+        "you",
+        "welcome to my humble abode.",
+        "enjoy your stay",
+        ":)",
+      ],
       typeSpeed: 50,
       backSpeed: 50,
       backDelay: 1500,
@@ -98,8 +100,7 @@ function HeroSection() {
         <h2
           style={{
             fontFamily: "'Roboto'",
-            fontSize:"40px"
-            
+            fontSize: "40px",
           }}
         >
           Communities
@@ -178,4 +179,4 @@ function HeroSection() {
   );
 }
 
-export default HeroSection
+export default HeroSection;

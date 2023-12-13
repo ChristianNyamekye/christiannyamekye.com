@@ -31,7 +31,7 @@ const skills4 = [
   { name: "Python", level: "Experienced" },
   { name: "Qiskit", level: "Experienced" },
   { name: "Linear Algebra", level: "Experienced" },
-  
+
   // Add more skills as needed
 ];
 
@@ -39,7 +39,7 @@ const skills = [
   { name: "Python", level: "Experienced" },
   { name: "Linear Algebra", level: "Experienced" },
   { name: "Jupyter", level: "Experienced" },
-  
+
   // Add more skills as needed
 ];
 
@@ -50,7 +50,16 @@ export default function Projects() {
       <h2>My Projects</h2> */}
 
       <div className="skills">
-        <h3 className="skills__title">GARB Development</h3>
+        <h3
+          className="skills__title"
+          style={{
+            fontFamily: "'Pirata One', sans-serif",
+            fontSize: "30px",
+            color: "white",
+          }}
+        >
+          GARB Development
+        </h3>
         <div className="skills__list">
           {skills1.map((skill, index) => (
             <article className="skills__details" key={index}>
@@ -65,7 +74,16 @@ export default function Projects() {
       </div>
 
       <div className="skills">
-        <h3 className="skills__title">Search Engine</h3>
+        <h3
+          className="skills__title"
+          style={{
+            fontFamily: "'Pirata One', sans-serif",
+            fontSize: "30px",
+            color: "white",
+          }}
+        >
+          Search Engine
+        </h3>
         <div className="skills__list">
           {skills2.map((skill, index) => (
             <article className="skills__details" key={index}>
@@ -80,7 +98,16 @@ export default function Projects() {
       </div>
 
       <div className="skills">
-        <h3 className="skills__title">Animation</h3>
+        <h3
+          className="skills__title"
+          style={{
+            fontFamily: "'Pirata One', sans-serif",
+            fontSize: "30px",
+            color: "white",
+          }}
+        >
+          Animation
+        </h3>
         <div className="skills__list">
           {skills3.map((skill, index) => (
             <article className="skills__details" key={index}>
@@ -95,7 +122,16 @@ export default function Projects() {
       </div>
 
       <div className="skills">
-        <h3 className="skills__title">Quantum Computing</h3>
+        <h3
+          className="skills__title"
+          style={{
+            fontFamily: "'Pirata One', sans-serif",
+            fontSize: "30px",
+            color: "white",
+          }}
+        >
+          Quantum Computing
+        </h3>
         <div className="skills__list">
           {skills4.map((skill, index) => (
             <article className="skills__details" key={index}>
@@ -110,7 +146,16 @@ export default function Projects() {
       </div>
 
       <div className="skills">
-        <h3 className="skills__title">Neural Network Development</h3>
+        <h3
+          className="skills__title"
+          style={{
+            fontFamily: "'Pirata One', sans-serif",
+            fontSize: "30px",
+            color: "white",
+          }}
+        >
+          Neural Network Development
+        </h3>
         <div className="skills__list">
           {skills.map((skill, index) => (
             <article className="skills__details" key={index}>
@@ -123,8 +168,6 @@ export default function Projects() {
           ))}
         </div>
       </div>
-
     </section>
   );
-
 }

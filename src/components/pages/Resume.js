@@ -5,7 +5,7 @@ import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
 
 export default function Resume() {
   return (
-    <section id="contactme">
+    <section id="resume">
       <div className="resume-container">
         <header className="resume-header">
           <h1>PORTFOLIO</h1>
