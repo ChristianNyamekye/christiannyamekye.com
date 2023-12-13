@@ -30,12 +30,11 @@ function Navbar() {
         <div className="navbar-container">
           <Link
             to="/"
-            className="navbar-logo"
+            className="navbar-logo animated-logo"
             onClick={closeMobileMenu}
-            style={{ color: "black" }}
+            style={{ color: "#0a192f" }}
           >
             Christian Nyamekye
-            <i className="fas fa-paw" />
           </Link>
 
           <div className="menu-icon" onClick={handleClick}>
@@ -74,7 +73,11 @@ function Navbar() {
             </li>
           </ul>
           {button && (
-            <Button buttonStyle="btn--outline" target="/contactme">
+            <Button
+              buttonStyle="btn--outline"
+              className="animated-button"
+              target="/contactme"
+            >
               CONTACT ME
             </Button>
           )}

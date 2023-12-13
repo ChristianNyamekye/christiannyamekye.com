@@ -55,7 +55,7 @@ function Footer() {
           <div class="social-icons">
             <Link
               class="social-icon-link facebook"
-              to="/"
+              to="//www.facebook.com/christian.nyamekye.547"
               target="_blank"
               aria-label="Facebook"
             >
@@ -63,7 +63,7 @@ function Footer() {
             </Link>
             <Link
               class="social-icon-link instagram"
-              to="/"
+              to="//www.instagram.com/_chr.st.an_/?hl=en#"
               target="_blank"
               aria-label="Instagram"
             >
@@ -71,16 +71,17 @@ function Footer() {
             </Link>
             <Link
               class="social-icon-link github"
-              to="http://github.com/ChristianNyamekye"
+              to="//github.com/ChristianNyamekye"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Github"
             >
               <i class="fab fa-github" />
             </Link>
+
             <Link
               class="social-icon-link twitter"
-              to="/"
+              to="//twitter.com/printlnXristian"
               target="_blank"
               aria-label="Twitter"
             >
@@ -88,7 +89,7 @@ function Footer() {
             </Link>
             <Link
               class="social-icon-link twitter"
-              to="http://linkedin.com/in/christian-k-nyamekye"
+              to="//linkedin.com/in/christian-k-nyamekye"
               rel="noopener noreferrer"
               target="_blank"
               aria-label="LinkedIn"
