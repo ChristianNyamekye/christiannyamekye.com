@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 function Footer() {
   return (
-    <div className="footer-container">
+    <div className="footer-container animated-gradient">
       <section className="footer-subscription">
         <p className="footer-subscription-heading">Reach out; let's connect!</p>
 
@@ -47,55 +47,59 @@ function Footer() {
         <div class="social-media-wrap">
           <div class="footer-logo">
             <Link to="/" className="social-logo">
-              CHRISTIAN
+              NYAMEKYE
               <i className="fa fa-bat" />
             </Link>
           </div>
           <small class="website-rights">christian © 2023</small>
           <div class="social-icons">
-            <Link
-              class="social-icon-link facebook"
-              to="//www.facebook.com/christian.nyamekye.547"
+            <a
+              className="social-icon-link facebook"
+              href="//www.facebook.com/christian.nyamekye.547"
               target="_blank"
+              rel="noopener noreferrer"
               aria-label="Facebook"
             >
-              <i class="fab fa-facebook-f" />
-            </Link>
-            <Link
+              <i className="fab fa-facebook-f" />
+            </a>
+            <a
               class="social-icon-link instagram"
-              to="//www.instagram.com/_chr.st.an_/?hl=en#"
+              href="https://www.instagram.com/christiannyamekye.kjr/?hl=en"
               target="_blank"
+              rel="noopener noreferrer"
               aria-label="Instagram"
             >
-              <i class="fab fa-instagram" />
-            </Link>
-            <Link
+              <i class="fab fa-instagram"></i>
+            </a>
+
+            <a
               class="social-icon-link github"
-              to="//github.com/ChristianNyamekye"
+              href="https://github.com/ChristianNyamekye"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Github"
             >
               <i class="fab fa-github" />
-            </Link>
+            </a>
 
-            <Link
+            <a
               class="social-icon-link twitter"
-              to="//twitter.com/printlnXristian"
+              href="https://twitter.com/printlnXristian"
               target="_blank"
+              rel="noopener noreferrer"
               aria-label="Twitter"
             >
-              <i class="fab fa-twitter" />
-            </Link>
-            <Link
-              class="social-icon-link twitter"
-              to="//linkedin.com/in/christian-k-nyamekye"
-              rel="noopener noreferrer"
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a
+              className="social-icon-link linkedIn"
+              href="//linkedin.com/in/christian-k-nyamekye"
               target="_blank"
+              rel="noopener noreferrer"
               aria-label="LinkedIn"
             >
-              <i class="fab fa-linkedin" />
-            </Link>
+              <i className="fab fa-linkedin" />
+            </a>
           </div>
         </div>
       </section>

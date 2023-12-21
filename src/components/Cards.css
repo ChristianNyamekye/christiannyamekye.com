@@ -33,7 +33,8 @@
 .cards {
   padding: 4rem;
   background:#0a192f ;
-  border-radius: 10px;
+  /* border-radius: 10px; */
+  animation: gradientFlow 30s ease infinite;
 }
 /* #66fcf1#8ff3b2 */
 h1 {
@@ -48,7 +49,21 @@ h1 {
   max-width: 1120px;
   width: 90%;
   margin: 0 auto;
+  position: relative; /* Needed for absolute positioning of the pseudo-element */
+  overflow: hidden;
+  /* animation: gradientFlow 30s ease infinite; */
+  margin-bottom: 250px;
+  
 }
+
+.cards__container h2 {
+  color: #64ffda; /* Heading color */
+  margin-bottom: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+
 
 .cards__wrapper {
   position: relative;
@@ -133,48 +148,82 @@ h1 {
   font-size: 18px;
   line-height: 24px;
 }
+/* Media Queries */
+@media only screen and (max-width: 1024px) {
+  .cards__container {
+    width: 70%; /* Adjust width for smaller screens */
+  }
+  
+  .cards__wrapper {
+    margin: 0; /* Adjust margin for smaller screens */
+  }
+  
+  .cards__item {
+    flex-direction: column; /* Stack the items vertically */
+    margin: 0 auto; /* Center the cards in the viewport */
+    width: 90%; /* Adjust card width for smaller screens */
+    margin-bottom: 2rem; /* Margin bottom for each card */
+  }
 
-@media only screen and (min-width: 1200px) {
-  .content__blog__container {
-    width: 84%;
+  .cards__item__link {
+    width: 100%; /* Full width */
+  }
+
+  .cards__item__pic-wrap {
+    padding-top: 56.25%; /* Adjust aspect ratio */
   }
 }
 
 @media only screen and (min-width: 1024px) {
   .cards__items {
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Allow wrapping for multiple cards */
   }
-}
 
-@media only screen and (max-width: 1024px) {
   .cards__item {
-    margin-bottom: 2rem;
+    flex: 0 1 calc(50% - 2rem); /* Set the width to half of the container minus the margin */
+    margin-bottom: 2rem; /* Margin bottom for each card */
   }
 }
 
+@media only screen and (min-width: 1200px) {
+  .content__blog__container,
+  .cards__container {
+    width: 84%; /* Set the width to 84% of the container */
+  }
+
+  .cards__item {
+    flex: 0 1 calc(33.333% - 2rem); /* Set the width to one third of the container minus the margin */
+  }
+}
 /* Back to Top Button */
 .top {
     position: fixed;
     bottom: 2.1rem;
     right: 2.1rem;
     cursor: pointer;
-    background: linear-gradient(45deg, #00c6ff, #0c3273);
+    background: linear-gradient(45deg, #00c6ff, #1f3a3e);
     border: none;
     border-radius: 50%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 0 20px #00c6ff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 0 20px #1f3a3e;
     transition: background-color 1s, box-shadow 1s, transform 1s;
+    z-index: 9999999;
 }
 
 .top i {
     display: block;
-    color: #fff;
+    color: #0ef;
     font-size: 24px;
     padding: 10px;
 }
 
 /* Hover Effect */
 .top:hover {
-    background: linear-gradient(45deg, #0c3273, #00c6ff);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 0 25px #00c6ff, 0 0 35px #0c3273;
+    background: linear-gradient(45deg, #1f3a3e, #00c6ff);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 0 25px #00c6ff, 0 0 35px #1f3a3e;
     transform: translateY(-5px);
 }
+
+
+

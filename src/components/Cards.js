@@ -24,7 +24,7 @@ function Cards() {
   };
 
   return (
-    <div className="cards">
+    <div className="cards animated-gradient">
      
 
       <h1 style={{ textAlign: "left", color: "cyan" }}>i am a ... </h1>
